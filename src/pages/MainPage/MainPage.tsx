@@ -1,12 +1,14 @@
-import { NavBar, SideBar } from "components";
-import React from "react";
+import { NavBar, PendingReqests, SideBar } from "components";
 
 const MainPage = () => {
   return (
     <div className="flex w-full h-full">
-      <SideBar />
+      <div className="md:hidden">
+        <SideBar />
+      </div>
       <div className="flex flex-col w-full">
         <NavBar />
+        <PendingReqests />
       </div>
     </div>
   );

@@ -1,0 +1,9 @@
+.scroll-not-show::-webkit-scrollbar {
+  background: none;
+  width: 5px;
+}
+
+.scroll-not-show::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: black;
+}

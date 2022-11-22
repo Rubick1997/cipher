@@ -1,5 +1,3 @@
-import React from "react";
-
 import {
   XCircleIcon,
   ArchiveBoxIcon,
@@ -10,7 +8,7 @@ import {
 
 const SideBar = () => {
   return (
-    <div className="border-gray-900 p-5 text-xs text-gray-400 bg-black h-screen scrollbar-hide pb-3 w-80 flex flex-col">
+    <div className="border-gray-900 p-5 text-xs text-gray-400 bg-black scrollbar-hide pb-3 w-80 flex flex-col h-screen">
       <XCircleIcon className="h-12 w-12 cursor-pointer" />
       <div className="mt-20 flex flex-col gap-8">
         <div className="flex gap-3 items-center">
