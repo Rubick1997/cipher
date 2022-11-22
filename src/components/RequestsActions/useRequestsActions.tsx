@@ -25,6 +25,7 @@ const useRequestsActions = () => {
       text: `You are about to approve the following request${
         selectedlist.length > 1 ? "s" : ""
       }:`,
+      name: "approve",
     },
     {
       title: "Message Requestor",

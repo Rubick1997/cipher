@@ -1,6 +1,4 @@
 import BasicModal from "components/BasicModal";
-import DataContext from "contexts/DataContext";
-import { useContext } from "react";
 import useRequestsActions from "./useRequestsActions";
 
 const RequestsActions = () => {

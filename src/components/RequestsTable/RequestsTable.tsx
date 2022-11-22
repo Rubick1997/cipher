@@ -80,6 +80,7 @@ const RequestsTable = () => {
 
   useEffect(() => {
     setList([]);
+    select.fns.onRemoveAll();
     getItems();
     console.log(loading);
   }, [loading]);

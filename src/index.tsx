@@ -4,22 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { GrpcContextProvider } from "contexts/GrpcContext";
-import { QueryClient, QueryClientProvider } from "react-query";
 import { DataContextProvider } from "contexts/DataContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-const queryClient = new QueryClient();
 
 root.render(
-  <QueryClientProvider client={queryClient}>
-    <GrpcContextProvider>
-      <DataContextProvider>
-        <App />
-      </DataContextProvider>
-    </GrpcContextProvider>
-  </QueryClientProvider>
+  <GrpcContextProvider>
+    <DataContextProvider>
+      <App />
+    </DataContextProvider>
+  </GrpcContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
